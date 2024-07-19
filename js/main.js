@@ -3,7 +3,7 @@ const modal = document.getElementById('modal')
 const modalImg = document.getElementById('modal-img')
 
 gallery.addEventListener('click', e => {
-	if (e.target.tagName === 'IMG') {
+	if (e.target.tagName === 'a') {
 		modal.style.display = 'flex'
 		modalImg.src = e.target.src
 	}
